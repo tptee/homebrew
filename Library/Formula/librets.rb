@@ -13,12 +13,6 @@ class Librets < Formula
                           "--enable-shared_dependencies",
                           "--prefix=#{prefix}",
                           "--with-boost-prefix=#{old_boost.prefix}",
-                          "--disable-dotnet",
-                          "--disable-java",
-                          "--disable-perl",
-                          "--disable-php",
-                          "--disable-python",
-                          "--disable-ruby"
     system "make install"
   end
 end
